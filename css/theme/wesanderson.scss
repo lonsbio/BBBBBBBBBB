@@ -1,0 +1,224 @@
+// css/theme/source/wesanderson.scss
+
+/**
+ * Wes Anderson-ish reveal.js theme
+ * Inspired by the R wesanderson palettes:
+ * https://github.com/karthik/wesanderson
+ */
+
+// Reveal theme template imports
+@use "../template/mixins" as *;
+@use "../template/settings" as *;
+
+// -----------------------------------------------------------------------------
+// Palette tokens
+// -----------------------------------------------------------------------------
+
+// Zissou-ish
+$wa-blue-deep: #3b9ab2;
+$wa-blue-soft: #78b7c5;
+$wa-yellow:    #ebcc2a;
+$wa-gold:      #e1af00;
+$wa-red:       #f21a00;
+
+// Grand Budapest / Royal-ish
+$wa-cream:     #faefd1;
+$wa-pink:      #e6a0c4;
+$wa-coral:     #fd6467;
+$wa-orange:    #d67236;
+$wa-brown:     #5b1a18;
+
+// Moonrise / Fantastic Fox-ish
+$wa-sage:      #85a88d;
+$wa-olive:     #9c964a;
+$wa-mustard:   #d8b70a;
+$wa-charcoal:  #29211f;
+
+// -----------------------------------------------------------------------------
+// Reveal variable overrides
+// These variable names come from reveal.js's theme settings template.
+// -----------------------------------------------------------------------------
+
+$backgroundColor: $wa-cream;
+
+$mainColor: $wa-charcoal;
+$headingColor: $wa-brown;
+
+$mainFont: "Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif;
+$headingFont: "Futura", "Avenir Next", "Gill Sans", sans-serif;
+$headingTextShadow: none;
+$headingLetterSpacing: 0.04em;
+$headingTextTransform: uppercase;
+$headingFontWeight: 700;
+
+$linkColor: $wa-blue-deep;
+$linkColorHover: $wa-red;
+
+$selectionBackgroundColor: $wa-yellow;
+$selectionColor: $wa-charcoal;
+
+// Generate the base reveal.js theme CSS
+@use "../template/theme";
+
+// -----------------------------------------------------------------------------
+// Custom theme details
+// -----------------------------------------------------------------------------
+
+.reveal {
+  font-variant-ligatures: common-ligatures;
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  line-height: 0.95;
+}
+
+.reveal h1 {
+  font-size: 2.35em;
+  color: $wa-brown;
+}
+
+.reveal h2 {
+  font-size: 1.55em;
+  color: $wa-orange;
+}
+
+.reveal h3 {
+  color: $wa-blue-deep;
+}
+
+.reveal strong {
+  color: $wa-red;
+}
+
+.reveal em {
+  color: $wa-olive;
+}
+
+.reveal a {
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.16em;
+}
+
+.reveal blockquote {
+  background: rgba($wa-pink, 0.22);
+  border-left: 0.35em solid $wa-coral;
+  box-shadow: none;
+  color: $wa-charcoal;
+  padding: 0.65em 0.9em;
+  width: 85%;
+}
+
+.reveal code {
+  background: rgba($wa-blue-soft, 0.25);
+  color: $wa-brown;
+  border-radius: 0.25em;
+  padding: 0.08em 0.22em;
+}
+
+.reveal pre {
+  box-shadow: none;
+  border: 0.12em solid rgba($wa-brown, 0.25);
+  border-radius: 0.35em;
+}
+
+.reveal pre code {
+  background: #fffaf0;
+  color: $wa-charcoal;
+  padding: 1em;
+}
+
+.reveal table {
+  border-collapse: collapse;
+  font-size: 0.78em;
+}
+
+.reveal table th {
+  background: $wa-blue-deep;
+  color: $wa-cream;
+}
+
+.reveal table td,
+.reveal table th {
+  border: 0.08em solid rgba($wa-brown, 0.25);
+  padding: 0.35em 0.55em;
+}
+
+.reveal .progress {
+  color: $wa-red;
+}
+
+.reveal .controls {
+  color: $wa-blue-deep;
+}
+
+// -----------------------------------------------------------------------------
+// Optional slide classes
+// Use with: <section class="zissou">, <section class="budapest">, etc.
+// -----------------------------------------------------------------------------
+
+.reveal section.zissou {
+  background: linear-gradient(135deg, $wa-blue-deep, $wa-blue-soft);
+  color: $wa-cream;
+
+  h1, h2, h3, a {
+    color: $wa-yellow;
+  }
+
+  strong {
+    color: $wa-red;
+  }
+}
+
+.reveal section.budapest {
+  background: linear-gradient(135deg, $wa-pink, $wa-cream);
+  color: $wa-brown;
+
+  h1, h2, h3 {
+    color: $wa-brown;
+  }
+
+  strong {
+    color: $wa-coral;
+  }
+}
+
+.reveal section.moonrise {
+  background: $wa-yellow;
+  color: $wa-charcoal;
+
+  h1, h2, h3 {
+    color: $wa-charcoal;
+  }
+
+  a {
+    color: $wa-blue-deep;
+  }
+}
+
+.reveal section.fox {
+  background: linear-gradient(135deg, $wa-orange, $wa-mustard);
+  color: $wa-brown;
+
+  h1, h2, h3 {
+    color: $wa-brown;
+  }
+}
+
+// Small label/chip utility
+.reveal .wa-chip {
+  display: inline-block;
+  background: $wa-yellow;
+  color: $wa-charcoal;
+  border: 0.08em solid $wa-brown;
+  border-radius: 999px;
+  padding: 0.12em 0.55em;
+  font-size: 0.55em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
