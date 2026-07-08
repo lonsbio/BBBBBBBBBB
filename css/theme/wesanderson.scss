@@ -45,23 +45,36 @@ $wa-charcoal:  #29211f;
 // These variable names come from reveal.js's theme settings template.
 // -----------------------------------------------------------------------------
 
-$backgroundColor: $wa-cream,
 
-$mainColor: $wa-charcoal,
-$headingColor: $wa-brown,
 
-$mainFont: '"Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif',
-$headingFont: '"Futura", "Avenir Next", "Gill Sans", sans-serif',
-$headingTextShadow: none,
-$headingLetterSpacing: 0.04em,
-$headingTextTransform: uppercase,
-$headingFontWeight: 700,
+$background-color: $wa-cream,
 
-$linkColor: $wa-blue-deep,
-$linkColorHover: $wa-red,
+$main-color: $wa-charcoal,
+$main-font: '"Avenir Next", "Gill Sans", "Trebuchet MS", sans-serif',
+$main-font-size: 42px,
 
-$selectionBackgroundColor: $wa-yellow,
-$selectionColor: $wa-charcoal
+$heading-color: $wa-brown,
+$heading-font: '"Futura", "Avenir Next", "Gill Sans", sans-serif',
+$heading-font-weight: 700,
+
+$heading-text-shadow: none,
+$heading-letter-spacing: 0.04em,
+$heading-text-transform: uppercase,
+
+$heading1-size: 2.5em,
+$heading2-size: 1.6em,
+$heading3-size: 1.3em,
+$heading4-size: 1em,
+
+$link-color: $wa-blue-deep,
+$link-color-hover: $wa-red,
+
+$selection-color: $wa-charcoal,
+$selection-background-color: $wa-yellow,
+
+$overlay-element-bg-color: '0 0 0',
+$overlay-element-fg-color: '240 240 240'
+
 );
 
 // Inject the theme template
