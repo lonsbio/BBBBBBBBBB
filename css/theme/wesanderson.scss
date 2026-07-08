@@ -10,31 +10,35 @@
 @use 'template/mixins' as mixins;
 
 
-// Inject theme variables (with some overrides)
-@use 'template/settings' with (
-	// -----------------------------------------------------------------------------
+// -----------------------------------------------------------------------------
 // Palette tokens
 // -----------------------------------------------------------------------------
 
 // Zissou-ish
-$wa-blue-deep: #3b9ab2,
-$wa-blue-soft: #78b7c5,
-$wa-yellow:    #ebcc2a,
-$wa-gold:      #e1af00,
-$wa-red:       #f21a00,
+$wa-blue-deep: #3b9ab2;
+$wa-blue-soft: #78b7c5;
+$wa-yellow:    #ebcc2a;
+$wa-gold:      #e1af00;
+$wa-red:       #f21a00;
 
 // Grand Budapest / Royal-ish
-$wa-cream:     #faefd1,
-$wa-pink:      #e6a0c4,
-$wa-coral:     #fd6467,
-$wa-orange:    #d67236,
-$wa-brown:     #5b1a18,
+$wa-cream:     #faefd1;
+$wa-pink:      #e6a0c4;
+$wa-coral:     #fd6467;
+$wa-orange:    #d67236;
+$wa-brown:     #5b1a18;
 
 // Moonrise / Fantastic Fox-ish
-$wa-sage:      #85a88d,
-$wa-olive:     #9c964a,
-$wa-mustard:   #d8b70a,
-$wa-charcoal:  #29211f,
+$wa-sage:      #85a88d;
+$wa-olive:     #9c964a;
+$wa-mustard:   #d8b70a;
+$wa-charcoal:  #29211f;
+
+
+
+// Inject theme variables (with some overrides)
+@use 'template/settings' with (
+	
 
 // -----------------------------------------------------------------------------
 // Reveal variable overrides
